@@ -9,9 +9,9 @@
     <form role="form">
         <div class="box box-primary card">
             <div class="box-header with-border">
-                <button type="button" [routerLink]="['/clientes/cadastro']" class="btn btn-primary"><i class="fa fa-plus"></i> Novo</button>
+                <button type="button" [routerLink]="['/clientes/cadastro']" class="btn btn-primary icon-label"><i class="fa fa-plus"></i> Novo</button>
                 <div class="divider"></div>
-                <button type="button" label="Submit" class="btn btn-danger"><i class="fa fa-trash"></i> Excluir Selecionados</button>
+                <button type="button" label="Submit" class="btn btn-danger icon-label"><i class="fa fa-trash"></i> Excluir Selecionados</button>
             </div>
 
             <div class="box-body">
@@ -32,7 +32,7 @@
 
                     <div class="col-md-12"></div>
                     <div class="col-md-2">
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-filter"></i> Filtrar</button>
+                        <button type="submit" class="btn btn-primary icon-label"><i class="fa fa-filter"></i> Filtrar</button>
                     </div>
                 </div>
 
@@ -46,17 +46,23 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <p-table [value]="cars">
+                        <p-table [value]="clientes" [paginator]="true" [rows]="5" [responsive]="true">
                             <ng-template pTemplate="header">
                                 <tr>
-                                    <th>Nome</th>
-                                    <th>Valor</th>
+                                    <th>Nome Fantasia</th>
+                                    <th>Razão Social</th>
+                                    <th>CNPJ</th>
+                                    <th>Telefone</th>
+                                    <th></th>
                                 </tr>
                             </ng-template>
-                            <ng-template pTemplate="body" let-car>
+                            <ng-template pTemplate="body" let-cliente>
                                 <tr>
-                                    <td>{{car.nome}}</td>
-                                    <td>{{car.valor}}</td>
+                                    <td>{{cliente.nomeFantasia}}</td>
+                                    <td>{{cliente.razaoSocial}}</td>
+                                    <td>{{cliente.cnpj}}</td>
+                                    <td>{{cliente.telefone}}</td>
+                                    <td><a href="#"><i class="fa fa-pencil-square-o"></i></a></td>
                                 </tr>
                             </ng-template>
                         </p-table>

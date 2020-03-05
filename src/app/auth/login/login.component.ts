@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Router } from '@angular/router';
 
 declare var $: any;
 
@@ -9,7 +10,7 @@ declare var $: any;
 })
 export class LoginComponent implements OnInit , OnDestroy {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
     $('body').addClass('hold-transition login-page');
@@ -20,6 +21,10 @@ export class LoginComponent implements OnInit , OnDestroy {
         increaseArea: '20%' /* optional */
       });
     });
+  }
+
+  onSubmit() {
+    this.router.navigate(['/clientes']);
   }
 
   ngOnDestroy(): void {

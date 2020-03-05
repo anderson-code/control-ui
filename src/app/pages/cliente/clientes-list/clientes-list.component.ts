@@ -7,17 +7,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientesListComponent implements OnInit {
 
-  cars: any[];
+  clientes: any[];
 
   constructor() { }
 
   ngOnInit(): void {
 
-    this.cars = [
-      { nome: 'vin', valor: 'Vin' },
-      {nome: 'year', valor: 'Year' },
-      { nome: 'brand', valor: 'Brand' },
-      { nome: 'color', valor: 'Color' }
+    this.clientes = [
+      { nomeFantasia: 'Makro Atacadista', razaoSocial: 'Makro Atacadista', cnpj: '00000000000000', telefone: '99999999999' },
+      { nomeFantasia: 'Makro Atacadista', razaoSocial: 'Makro Atacadista', cnpj: '00000000000000', telefone: '99999999999' },
+      { nomeFantasia: 'Makro Atacadista', razaoSocial: 'Makro Atacadista', cnpj: '00000000000000', telefone: '99999999999' },
+      { nomeFantasia: 'Makro Atacadista', razaoSocial: 'Makro Atacadista', cnpj: '00000000000000', telefone: '99999999999' },
+      { nomeFantasia: 'Makro Atacadista', razaoSocial: 'Makro Atacadista', cnpj: '00000000000000', telefone: '99999999999' },
+      { nomeFantasia: 'Makro Atacadista', razaoSocial: 'Makro Atacadista', cnpj: '00000000000000', telefone: '99999999999' },
+      { nomeFantasia: 'Makro Atacadista', razaoSocial: 'Makro Atacadista', cnpj: '00000000000000', telefone: '99999999999' },
+      { nomeFantasia: 'Makro Atacadista', razaoSocial: 'Makro Atacadista', cnpj: '00000000000000', telefone: '99999999999' },
+      { nomeFantasia: 'Makro Atacadista', razaoSocial: 'Makro Atacadista', cnpj: '00000000000000', telefone: '99999999999' },
+      { nomeFantasia: 'Makro Atacadista', razaoSocial: 'Makro Atacadista', cnpj: '00000000000000', telefone: '99999999999' },
+      { nomeFantasia: 'Makro Atacadista', razaoSocial: 'Makro Atacadista', cnpj: '00000000000000', telefone: '99999999999' },
+      { nomeFantasia: 'Makro Atacadista', razaoSocial: 'Makro Atacadista', cnpj: '00000000000000', telefone: '99999999999' },
+      { nomeFantasia: 'Makro Atacadista', razaoSocial: 'Makro Atacadista', cnpj: '00000000000000', telefone: '99999999999' },
+      { nomeFantasia: 'Makro Atacadista', razaoSocial: 'Makro Atacadista', cnpj: '00000000000000', telefone: '99999999999' },
+      { nomeFantasia: 'Makro Atacadista', razaoSocial: 'Makro Atacadista', cnpj: '00000000000000', telefone: '99999999999' },
+      { nomeFantasia: 'Makro Atacadista', razaoSocial: 'Makro Atacadista', cnpj: '00000000000000', telefone: '99999999999' },
+      { nomeFantasia: 'Makro Atacadista', razaoSocial: 'Makro Atacadista', cnpj: '00000000000000', telefone: '99999999999' },
+      { nomeFantasia: 'Makro Atacadista', razaoSocial: 'Makro Atacadista', cnpj: '00000000000000', telefone: '99999999999' },
+      { nomeFantasia: 'Makro Atacadista', razaoSocial: 'Makro Atacadista', cnpj: '00000000000000', telefone: '99999999999' }
     ];
   }
 

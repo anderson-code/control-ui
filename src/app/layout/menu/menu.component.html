@@ -14,13 +14,13 @@
     <!-- /.search form -->
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu" data-widget="tree">
-      <li>
-          <a href="#">
+      <li routerLinkActive="active">
+          <a [routerLink]="['/clientes-list']">
             <i class="fa fa-home"></i> <span>Home</span>
           </a>
       </li>
       
-      <li class="active treeview">
+      <li class="treeview">
         <a href="#">
           <i class="fa fa-list-ul"></i> <span>Cadastros</span>
           <span class="pull-right-container">
@@ -31,6 +31,9 @@
           <li class="active"><a [routerLink]="['/clientes-list']"><i class="fa fa-users"></i> Clientes</a></li>
           <li><a href="index.html"><i class="fa fa-user"></i> Usuario</a></li>
         </ul>
+        <a [routerLink]="['/login']">
+            <i class="fa fa-power-off"></i> <span>Sair</span>
+          </a>
       </li>
     </ul>
   </section>
